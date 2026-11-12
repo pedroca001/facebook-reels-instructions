@@ -1,0 +1,25 @@
+# Somente documentação pública e modelos genéricos.
+.DS_Store
+.env
+.env.*
+!.env.example
+*.sqlite*
+*.db
+*.mp4
+*.mov
+*.mp3
+*.wav
+*.png
+*.jpg
+*.jpeg
+*.csv
+runtime.json
+settings.local.json
+answers.local.json
+runtime/
+data/
+reports/
+private/
+.venv/
+node_modules/
+__pycache__/

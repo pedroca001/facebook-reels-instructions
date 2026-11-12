@@ -1,0 +1,60 @@
+{
+  "example_only": true,
+  "executable_configuration": false,
+  "operator": "<NOME_DO_OPERADOR>",
+  "timezone": "America/Sao_Paulo",
+  "ledger_path": "<DIRETORIO_LOCAL>/tracking.sqlite3",
+  "pool_root": "<PASTA_APROVADA>",
+  "pages": [
+    {
+      "page_id": "<ID_AUTORIZADO>",
+      "ready": false,
+      "start_at": "<ISO_COM_FUSO>"
+    }
+  ],
+  "schedule": {
+    "default_slots": [
+      2,
+      3
+    ],
+    "nominal_hours": {
+      "1": 2,
+      "2": 10,
+      "3": 18
+    },
+    "random_minute_range": [
+      6,
+      40
+    ],
+    "page_slot_overrides": {},
+    "missed_slot_policy": "ask_before_recovery"
+  },
+  "automation": {
+    "name": "<NOME_APROVADO>",
+    "keywords": [
+      "yes",
+      "recipe",
+      "recipt",
+      "receipt",
+      "recip",
+      "reci",
+      "rec",
+      "pe",
+      "want",
+      "see"
+    ],
+    "private_message": "<TEXTO_LITERAL_APROVADO>",
+    "public_reply": "<TEXTO_LITERAL_APROVADO>",
+    "channels": "<SOMENTE_CANAIS_DISPONIVEIS_E_APROVADOS>"
+  },
+  "posts": {
+    "caption": "<LEGENDA_E_HASHTAGS_APROVADAS>",
+    "public": true
+  },
+  "execution": {
+    "same_page_parallelism": 1,
+    "parallel_authorization_required": true,
+    "metrics_during_posting": false,
+    "restart_chrome": false
+  }
+}
